@@ -1,7 +1,12 @@
-var xml = require('xml');
+var Finvoice = function(){
+	this.AccountDetails = require('./src/FinvoiceAccountDetails');
+	this.Address = require('./src/FinvoiceAddress');
+	this.SellerInformationDetails = require('./src/FinvoiceSellerInformationDetails');
+	this.SellerParty = require('./src/FinvoiceSellerParty');
+};
 
-var finvoicejs = function(){
+Finvoice.setSeller = function(sellerObj){
 	//
 };
 
-module.exports = finvoicejs;
+module.exports = Finvoice;
